@@ -12,7 +12,7 @@ class AuthController extends Controller
 {
     public function getRegister()
     {
-        return view('register');
+        return view('user.auth.register');
     }
 
     public function postRegister(RegisterRequest $request)
@@ -23,15 +23,15 @@ class AuthController extends Controller
                 'email' => $request['email'],
                 'password' => Hash::make($request['password']),
             ]);
-            return redirect('login')->with('result', '会員登録が完了しました');
+            return redirect()->route('user.login')->with('result', '会員登録が完了しました');
         } catch (\Throwable $th) {
-            return redirect('register')->with('result', 'エラーが発生しました');
+            return redirect()->route('user.register')->with('result', 'エラーが発生しました')->withInput();
         }
     }
 
     public function getLogin()
     {
-        return view('login');
+        return view('user.auth.login');
     }
 
     public function postLogin(LoginRequest $request)

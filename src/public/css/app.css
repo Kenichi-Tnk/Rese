@@ -1,0 +1,41 @@
+body {
+    background: #efefef;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 60px 90px;
+}
+
+.header-logo {
+    width: 48px;
+    height: 48px;
+    background: #296cff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.header-logo::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 8px 0 #fff, 0 16px 0 #fff;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #296cff;
+}
+
+.content {
+    width: 100%;
+}
