@@ -23,4 +23,6 @@ Route::prefix('user')->name('user.')->group(function () {
     Route::post('/logout', [AuthController::class,'getLogout'])->name('logout');
 });
 
+Route::get('/', [ShopController::class,'index'])->name('shops.index');
+
 
