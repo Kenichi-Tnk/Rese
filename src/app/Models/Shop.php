@@ -11,11 +11,11 @@ class Shop extends Model
 
     public function area()
     {
-        return $this->belongsTo[Area::class];
+        return $this->belongsTo(Area::class);
     }
 
     public function genre()
     {
-        return $this->belongsTo[Ganre::class];
+        return $this->belongsTo(Genre::class);
     }
 }
