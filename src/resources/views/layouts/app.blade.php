@@ -17,18 +17,9 @@
             <div class="header-logo"></div>
             <div class="header-title">Rese</div>
         </div>
-        <form class="header-search" method="GET" action="#">
-        <select name="area">
-            <option value="">All area</option>
-            <!-- エリア選択肢をここに追加 -->
-        </select>
-        <select name="genre">
-            <option value="">All genre</option>
-            <!-- ジャンル選択肢をここに追加 -->
-        </select>
-        <input type="text" name="search" placeholder="Search ...">
-        <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+        @hasSection('header-search')
+            @yield('header-search')
+        @endif
     </div>
 
     <div class="content">

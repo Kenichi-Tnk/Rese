@@ -25,5 +25,5 @@ Route::prefix('user')->name('user.')->group(function () {
 });
 
 Route::get('/', [ShopController::class,'index'])->name('shops.index');
-
+Route::get('/detail/{shop}', [ShopController::class,'detail'])->name('shops.detail');
 

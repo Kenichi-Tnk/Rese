@@ -1,0 +1,123 @@
+.shop-detail-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 48px;
+}
+
+.shop-detail-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.shop-detail-back {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.shop-detail-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.shop-detail-img {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.shop-detail-tags {
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.shop-detail-description {
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+/* 右側：予約フォーム */
+.shop-detail-right {
+    flex: 1;
+    background: #296cff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    padding: 32px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    min-width: 340px;
+    max-width: 400px;
+    color: #fff;
+}
+
+.shop-detail-right h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.shop-reserve-form input,
+.shop-reserve-form select {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+.shop-reserve-summary {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 24px 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.shop-reserve-btn {
+    width: 100%;
+    background: #0057ff;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    padding: 18px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+    .shop-detail-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .shop-detail-right {
+        max-width: 100%;
+        min-width: unset;
+    }
+
+    .shop-detail-img {
+        max-width: 100%;
+        height: 220px;
+    }
+}
